@@ -1,0 +1,35 @@
+# GitHub Pages konfiguráció
+title: "EasyPerfo - Letöltések"
+description: "Automata teljesítményszámító szoftver repülőgépekhez"
+url: "https://yourusername.github.io"
+baseurl: "/easyperfo"
+
+# GitHub Pages beállítások
+plugins:
+  - jekyll-relative-links
+
+# Fájl típusok engedélyezése
+include:
+  - "*.exe"
+  - "*.zip"
+  - "*.ico"
+  - "*.md"
+
+# Statikus fájlok kiszolgálása
+defaults:
+  - scope:
+      path: "*.exe"
+    values:
+      sitemap: false
+  - scope:
+      path: "*.zip"
+    values:
+      sitemap: false
+
+# Markdown beállítások
+markdown: kramdown
+highlighter: rouge
+
+# SEO
+lang: hu
+author: KIBOVIT
